@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="{{ url_for('serve_css') }}">
+    </head>
+    <body>
+        <div id="navbar">
+            <p>this navbar is always at the top. {{ link_with_class('Home','/','navbarlink') }} :: 
+                                                {{ link_with_class('Main','/maindatabase','navbarlink') }} ::
+                                                {{ link_with_class('Create','/create','navbarlink') }} ::
+                                                {{ link_with_class('Update','/update','navbarlink') }} ::
+                                                {{ link_with_class('Styles','/viewstyles','navbarlink') }} ::
+                                                {{ link_with_class('Yahoo','http://www.yahoo.com','navbarlink') }}</p>
+        </div>
+
+        {% block content %}{% endblock %}
+
+    </body>
+
+</html>

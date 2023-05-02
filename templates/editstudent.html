@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <p>An edit page to edit a selected student in the database.</p>
+        <form method="POST">
+                {{ form.hidden_tag() }} <!--for CSRF protection, you need to include this-->
+                {{ form.first_name.label }} {{ form.first_name() }}<br>
+                {{ form.email.label }} {{ form.email() }}<br>
+                {{ form.submit() }}
+        </form>
+
+{% endblock %}

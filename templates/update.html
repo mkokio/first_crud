@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <p>An page in which you can update or remove students in the database.</p>
+        {% for student in students %}
+        <div class="displaytable">
+                <span>{{ student.id }} - {{ student.first_name }} - {{ student.email }}</span>
+                <span>{{ delete_student_button(student) }} </span>
+                <span> {{ link_with_class(' edit','/edit/' ~ student.id,'edit-student') }} </span>
+        </div>
+        {% endfor %}
+{% endblock %}
+
+<!-- the fancy tilde ~ operator concatenates the string-->

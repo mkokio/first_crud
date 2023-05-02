@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<p>A random practice page</p>
+<h1>heading 1</h1>
+<h2>heading 2</h2>
+<h3>heading 3</h3>
+{{ link_with_class('Link to somewhere','http://www.boingboing.net','link-style') }}
+
+<p>ordered list</p>
+<ol>
+        <li>wake up</li>
+        <li>brush teeth</li>
+        <li>leave house</li>
+</ol>
+
+<p>unordered list</p>
+<ul>
+        <li>eggs</li>
+        <li>cheese</li>
+        <li>bacon</li>
+</ul>
+
+<h3>Let's put a macro here:</h3>
+<p>{{ link_with_class('Go to google', 'http://www.google.com', 'macro-link') }}</p>
+
+<p>later, polymorphing, map(), lambda, loclas(), list concatenation, *args, **kwargs, dunder, etc.</p>
+{% endblock %}

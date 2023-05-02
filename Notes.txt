@@ -1,0 +1,15 @@
+Install Flask and any necessary dependencies
+Set up a Flask app instance
+Define the routes for the different CRUD operations (e.g. create, read, update, delete)
+Define the necessary functions for each route (e.g. to create a new record, retrieve records, update records, or delete records from a database)
+Set up templates to display the data from the database on the frontend
+Configure the app's database connection and schema
+Run, test, debug
+
+Create your own basic CRUD flask app using Jinja templates and SQLite with SQLalchemy from scratch:
+The database should just use one table and model (Users) which will have the users name and email.
+A main page that shows the user's names and emails in a list and has buttons that delete users from the database.
+A create page in which you can create new users in the database.
+An update page in which you can edit users in the database.
+Do not directly copy and change a tutorial for this (although you can do a tutorial that is similar first then try to build this yourself). The idea is to get you used to googling and reading documentation to figure out how to solve problems.
+Feel free to ask for help in the server while doing this if you are not able to find the answer from googling.

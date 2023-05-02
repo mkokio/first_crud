@@ -1,0 +1,40 @@
+/* This is a simple style sheet */
+html {
+    font-size: 10px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background-color: antiquewhite;
+}
+#navbar {
+    background-color: rgba(230, 230, 255, 0.564);
+}
+h1 {
+    margin: 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px rgb(234, 234, 234); /*text-shadow 4 values*/
+    font-size: 30px;
+    text-align: center;
+  }
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+a,
+p,
+li,
+div {
+font-size: 12px;
+line-height: 1;
+}
+body {
+    width: 600px;
+    margin: 0 auto; /*#1 is top & bottom, #2 is left & right*/
+    background-color: azure;
+    padding: 30px 30px 30px 30px;
+    border: 1px solid black;
+
+}
+.displaytable {
+    display: flex;
+    align-items: center;
+}

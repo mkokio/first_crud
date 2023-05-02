@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <p>A main page that shows all the students' names and emails from the database.</p>
+
+        {% for student in students %}
+        <div>ID: {{ student.id }} - Name: {{ student.first_name }} - Email: {{ student.email }}</div>
+        {% endfor %}
+
+{% endblock %}
