@@ -54,6 +54,6 @@ coverage.xml
 cover/
 
 # Flask stuff:
-instance/
+#instance/
 .webassets-cache
 
